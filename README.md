@@ -1,2 +1,2 @@
 # UCA - Data Structures and Algorithms
-UCA Data Structures and Algorithms (Algorithm Design and Implementation - ADI) classes.
+UCA Data Structures and Algorithms (Advanced Programming Concepts (APC) and Algorithm Design & Implementation (ADI)) classes.
