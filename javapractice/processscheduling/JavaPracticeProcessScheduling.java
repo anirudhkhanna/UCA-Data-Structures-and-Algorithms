@@ -19,7 +19,7 @@ class BinarySearchTree<Key extends Comparable, Value> // Key and Value are gener
 			this.key = key;
 			this.value = value;
 		}
-	};
+	}
 	
 	private Node root = null;
 	
@@ -85,7 +85,7 @@ class BinarySearchTree<Key extends Comparable, Value> // Key and Value are gener
 	{
 		root = null;
 	}
-};
+}
 
 /* MAIN CLASS */
 public class JavaPracticeProcessScheduling
@@ -121,4 +121,4 @@ public class JavaPracticeProcessScheduling
 		bst.inOrder();
 		System.out.print("\n***\n");
 	}
-};
+}

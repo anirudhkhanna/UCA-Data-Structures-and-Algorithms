@@ -37,7 +37,7 @@ public class Priority implements Comparable/*<T>*/
 		else if(this.avgTime < p.avgTime) return -1;
 		else return 0;
 	}
-};
+}
 
 /* COMPARATORBYAVGTIME CLASS IMPLEMENTING COMPARATOR INTERFACE */
 class ComparatorByAvgTime implements Comparator/*<T>*/
