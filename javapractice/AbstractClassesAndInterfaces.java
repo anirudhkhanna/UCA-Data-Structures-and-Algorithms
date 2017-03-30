@@ -14,8 +14,8 @@ abstract class MyAbstractClass {
 
 /* Interface */
 interface MyInterface {
-//	int x; <-- Error, as instance variables are final in interfaces
-	int y = 10;
+//	int x; <-- Error, as variables are final in interfaces - must be initialized
+	int y = 10; // Interface variables are static by default anyway (along with final)
 	static int z = 20;
 	
 //	void foo() { System.out.println("Method: foo()"); } <-- Error, as function definition is not allowed in interfaces
