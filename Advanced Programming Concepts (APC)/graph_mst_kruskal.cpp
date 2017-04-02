@@ -1,4 +1,4 @@
-/* Kruskal’s Minimum Spanning Tree Algorithm
+/* Kruskal's Minimum Spanning Tree Algorithm
 
    Spanning Trees and Minimum Spanning Tree:
    Given a connected and undirected graph, a spanning tree is a subgraph that connects all the vertices together and is a tree (no loops, no circuits and no self-loops). A graph can have many spanning trees.
@@ -8,7 +8,7 @@
    Applications:
    Network design (min cost of lines to connect all systems), connecting different cities, approximately solving the travelling salesman problem, and etc.
 
-   Kruskal’s MST Algorithm:
+   Kruskal's MST Algorithm:
    1. Sort all the edges in ascending order of their weights.
    2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far.
       If no cycle is formed, include this edge in the spaning tree. Otherwise, discard it.
@@ -16,7 +16,7 @@
 
    Time Complexity:
    O(E log E) or O(E log V).
-   Sorting the edges takes O(E log E) time. After sorting, we iterate through all the edges and apply Union-Find algorithm to check for cycles. The find and union operations can take at most O(log V) time.
+   Sorting the edges takes O(E log E) time. After sorting, we iterate through all the edges and apply Union-Find algorithm to check for cycles. The find and union operations can take at most O(log V) time when union is done by ranking (otherwise linear time in worst case).
    So the overall complexity is O(E log E + E log V). The value of E can be at most V^2, and log V^2 = 2 log V, so O(log E) ~ O(log V).
    Therefore, the time complexity becomes O(E log E) or O(E log V).
 
@@ -61,7 +61,7 @@ int find(int parent[], int i) {
 	else return find(parent, parent[i]);
 }
 
-// union operation of Union-Find: unite two given subsets
+// union operation of Union-Find: unite two given subsets (without ranking)
 void Union(int parent[], int x, int y) {
 	int xset = find(parent, x);
 	int yset = find(parent, y);
