@@ -50,6 +50,7 @@ void graphColoringGreedy(int **graph, int V) {
 
 	// assign colors to the remaining V-1 vertices
 	for(int u = 1; u < V; u++) {
+
 		// check all the adjacent vertices v and mark their colors as unavailable
 		for(int v = 0; v < V; v++) {
 			if(graph[u][v] == 1 && result[v] != -1) {
