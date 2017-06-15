@@ -1,3 +1,5 @@
+package pq;
+
 import pq.PriorityQueue;
 
 public class PQClient {

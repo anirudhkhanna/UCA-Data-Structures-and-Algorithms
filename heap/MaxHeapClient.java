@@ -1,3 +1,5 @@
+package heap;
+
 import heap.MaxHeap;
 
 public class MaxHeapClient {
